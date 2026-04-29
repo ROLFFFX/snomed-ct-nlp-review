@@ -5,3 +5,7 @@ __pycache__/
 .ipynb_checkpoints/
 anthology+abstracts.bib
 anthology+abstracts.bib.gz
+embase_records.ris
+embase_queries.csv
+acm.bib
+ieee_results.csv
