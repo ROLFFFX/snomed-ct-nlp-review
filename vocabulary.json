@@ -5,18 +5,19 @@
     "anchor_papers": [
       {
         "id": "gao2022",
-        "citation": "Gao Y et al. JAMIA. 2022;29(10):1797-1806. doi:10.1093/jamia/ocac127",
-        "contribution": "Granular 48-task taxonomy from shared-task papers using publicly available EHR corpora"
+        "citation": "Gao Y et al. JAMIA. 2022;29(10):1797-1806. doi:10.1093/jamia/ocac127"
       },
       {
         "id": "wu2022",
-        "citation": "Wu H et al. npj Digit Med. 2022;5:186. doi:10.1038/s41746-022-00730-6",
-        "contribution": "7-category taxonomy with prevalence data across 107 UK clinical NLP papers"
+        "citation": "Wu H et al. npj Digit Med. 2022;5:186. doi:10.1038/s41746-022-00730-6"
       },
       {
         "id": "lederman2022",
-        "citation": "Lederman A et al. JAMIA. 2022;29(10):1810-1817. doi:10.1093/jamia/ocac121",
-        "contribution": "Clinical prediction and quality/workflow tasks absent from purely NLP-centric surveys"
+        "citation": "Lederman A et al. JAMIA. 2022;29(10):1810-1817. doi:10.1093/jamia/ocac121"
+      },
+      {
+        "id": "jmir2024_dl",
+        "citation": "Task-Specific Transformer-Based Language Models in Health Care. JMIR Med Inform. 2024. doi:10.2196/49724. PMC11612605"
       }
     ]
   },
@@ -31,13 +32,7 @@
         "clinical NER",
         "disorder detection",
         "medical event identification"
-      ],
-      "prevalence": "25-32% of clinical NLP work",
-      "sources": [
-        "gao2022",
-        "wu2022"
-      ],
-      "notes": "Largest single category; encompasses most clinical entity detection tasks"
+      ]
     },
     {
       "id": 2,
@@ -48,12 +43,7 @@
         "PHI detection",
         "anonymization",
         "patient identifier"
-      ],
-      "prevalence": "Subtype of NER; major benchmark lineage (i2b2 2006, 2014)",
-      "sources": [
-        "gao2022"
-      ],
-      "notes": "Separated from NER because it has its own benchmark lineage and rarely uses SNOMED-CT"
+      ]
     },
     {
       "id": 3,
@@ -65,13 +55,7 @@
         "concept mapping",
         "terminology mapping",
         "clinical concept normalization"
-      ],
-      "prevalence": "High SNOMED-CT relevance; moderate volume",
-      "sources": [
-        "gao2022",
-        "wu2022"
-      ],
-      "notes": "Most direct point of SNOMED-CT intersection \u2014 mapping free text to concept IDs is the task"
+      ]
     },
     {
       "id": 4,
@@ -80,13 +64,7 @@
         "relation extraction",
         "clinical relation extraction",
         "event extraction"
-      ],
-      "prevalence": "~17% (Wu et al.)",
-      "sources": [
-        "gao2022",
-        "wu2022"
-      ],
-      "notes": ""
+      ]
     },
     {
       "id": 5,
@@ -97,13 +75,7 @@
         "medication extraction",
         "drug extraction",
         "pharmacovigilance"
-      ],
-      "prevalence": "Subtype of IE/RE; own benchmark lineage (i2b2 2009, n2c2 2018)",
-      "sources": [
-        "gao2022",
-        "lederman2022"
-      ],
-      "notes": "Separated from relation extraction due to distinct benchmark lineage"
+      ]
     },
     {
       "id": 6,
@@ -115,13 +87,7 @@
         "cohort selection",
         "smoking status",
         "risk assessment"
-      ],
-      "prevalence": "~27% (Wu et al.); largest in UK survey",
-      "sources": [
-        "gao2022",
-        "wu2022"
-      ],
-      "notes": "Includes smoking, obesity, SDoH, cohort selection subtasks"
+      ]
     },
     {
       "id": 7,
@@ -131,12 +97,7 @@
         "negation detection",
         "uncertainty detection",
         "hedge detection"
-      ],
-      "prevalence": "Subtype of sentence classification",
-      "sources": [
-        "gao2022"
-      ],
-      "notes": "Clinical-text-specific; SNOMED semantic tags occasionally used as label space"
+      ]
     },
     {
       "id": 8,
@@ -147,28 +108,17 @@
         "clinical summarization",
         "discharge summary",
         "radiology report summarization"
-      ],
-      "prevalence": "Small historically; growing rapidly in LLM era",
-      "sources": [
-        "gao2022",
-        "lederman2022"
-      ],
-      "notes": ""
+      ]
     },
     {
       "id": 9,
-      "name": "Question Answering / Machine Reading Comprehension",
+      "name": "Question Answering / MRC",
       "search_terms": [
         "question answering",
         "machine reading comprehension",
         "clinical question answering",
         "medical question answering"
-      ],
-      "prevalence": "Moderate; growing",
-      "sources": [
-        "gao2022"
-      ],
-      "notes": ""
+      ]
     },
     {
       "id": 10,
@@ -176,12 +126,7 @@
       "search_terms": [
         "information retrieval",
         "clinical information retrieval"
-      ],
-      "prevalence": "~13% (Wu et al.)",
-      "sources": [
-        "wu2022"
-      ],
-      "notes": ""
+      ]
     },
     {
       "id": 11,
@@ -191,13 +136,7 @@
         "temporal expression",
         "temporal relation",
         "clinical timeline"
-      ],
-      "prevalence": "~3% (Wu et al.)",
-      "sources": [
-        "gao2022",
-        "wu2022"
-      ],
-      "notes": "i2b2 2012 anchor benchmark"
+      ]
     },
     {
       "id": 12,
@@ -205,27 +144,17 @@
       "search_terms": [
         "coreference resolution",
         "co-reference resolution"
-      ],
-      "prevalence": "Small",
-      "sources": [
-        "gao2022"
-      ],
-      "notes": "i2b2 2011 anchor benchmark"
+      ]
     },
     {
       "id": 13,
-      "name": "Semantic Textual Similarity / Natural Language Inference",
+      "name": "Semantic Textual Similarity / NLI",
       "search_terms": [
         "semantic textual similarity",
         "natural language inference",
         "textual entailment",
         "clinical NLI"
-      ],
-      "prevalence": "Small",
-      "sources": [
-        "gao2022"
-      ],
-      "notes": "n2c2 2019 anchor benchmark"
+      ]
     },
     {
       "id": 14,
@@ -234,13 +163,7 @@
         "natural language generation",
         "text generation",
         "clinical text generation"
-      ],
-      "prevalence": "<1% historically; rising sharply post-2022",
-      "sources": [
-        "gao2022",
-        "wu2022"
-      ],
-      "notes": ""
+      ]
     },
     {
       "id": 15,
@@ -251,12 +174,7 @@
         "prognosis",
         "length of stay",
         "clinical prediction"
-      ],
-      "prevalence": "Not well-covered in NLP-centric surveys",
-      "sources": [
-        "lederman2022"
-      ],
-      "notes": "Downstream clinical tasks where NLP is a component; low expected SNOMED-CT yield"
+      ]
     },
     {
       "id": 16,
@@ -265,12 +183,7 @@
         "clinical audit",
         "workflow",
         "procedure quality"
-      ],
-      "prevalence": "Not well-covered in NLP-centric surveys",
-      "sources": [
-        "lederman2022"
-      ],
-      "notes": "Forward-looking category per Lederman et al.; very low expected yield"
+      ]
     }
   ]
 }
